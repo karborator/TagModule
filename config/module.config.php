@@ -1,4 +1,7 @@
 <?php
+
+use Doctrine\ORM\Mapping\Driver\AnnotationDriver;
+
 return [
     'system_tags'            => [
         'image' => 'media.image',
@@ -14,6 +17,20 @@ return [
     ],
     'listeners'              => [
         0 => \Tag\Service\TagService::class
+    ],
+    'doctrine' => [
+        'driver' => [
+            'Doctrine_driver' => [
+                'paths' => [
+                    2 => __DIR__ . '/../src/V1/Rest/Tag',
+                ],
+            ],
+            'orm_default'     => [
+                'drivers' => [
+                    'Tag\\V1\\Rest\\Tag' => 'Doctrine_driver',
+                ],
+            ],
+        ],
     ],
     'router'                 => [
         'routes' => [

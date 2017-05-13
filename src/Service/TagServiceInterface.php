@@ -12,4 +12,8 @@ namespace Tag\Service;
 interface TagServiceInterface
 {
     public function search(string $tag, string $context);
+
+    public function mapContextValue2Resource(string $context);
+
+    public function mapTagValue2Resource(string $tag);
 }

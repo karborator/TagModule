@@ -23,16 +23,16 @@ Tags that can be used from the system internally.
     {
       "_links": {
         "self": {
-          "href": "http://dari-backend.dev/tag?page=1"
+          "href": "http://localhost:8080/tag?page=1"
         },
         "first": {
-          "href": "http://dari-backend.dev/tag"
+          "href": "http://localhost:8080/tag"
         },
         "last": {
-          "href": "http://dari-backend.dev/tag?page=2"
+          "href": "http://localhost:8080/tag?page=2"
         },
         "next": {
-          "href": "http://dari-backend.dev/tag?page=2"
+          "href": "http://localhost:8080/tag?page=2"
         }
       },
       "_embedded": {
@@ -43,7 +43,7 @@ Tags that can be used from the system internally.
             "context": "Settings\\Service\\ServicesContentProvider::11",
             "_links": {
               "self": {
-                "href": "http://dari-backend.dev/tag/95"
+                "href": "http://localhost:8080/tag/95"
               }
             }
           }
@@ -59,11 +59,11 @@ Tags that can be used from the system internally.
 #
     {
       "id": 95,
-      "tag": "http://dari-backend.dev/content-article/31",
-      "context": "http://dari-backend.dev/media-image/231",
+      "tag": "http://localhost:8080/content-article/31",
+      "context": "http://localhost:8080/media-image/231",
       "_links": {
         "self": {
-          "href": "http://dari-backend.dev/tag/95"
+          "href": "http://localhost:8080/tag/95"
         }
       }
     }
@@ -71,8 +71,8 @@ Tags that can be used from the system internally.
 # POST: http://localhost:8080/tag
 #
     {
-    	"tag": "http://dari-backend.dev/content-article/31",
-    	"context": "http://dari-backend.dev/media-image/231"
+    	"tag": "http://localhost:8080/content-article/31",
+    	"context": "http://localhost:8080/media-image/231"
     }
     
     {
@@ -81,7 +81,7 @@ Tags that can be used from the system internally.
       "context": "Media\\Service\\ImageContentProvider::231",
       "_links": {
         "self": {
-          "href": "http://dari-backend.dev/tag/147"
+          "href": "http://localhost:8080/tag/147"
         }
       }
     }
@@ -89,8 +89,8 @@ Tags that can be used from the system internally.
 # PATCH: http://localhost:8080/tag/147
 #
     {
-    	"tag": "http://dari-backend.dev/content-article/32",
-    	"context": "http://dari-backend.dev/media-image/231"
+      "tag": "http://localhost:8080/content-article/32",
+      "context": "http://localhost:8080/media-image/231"
     }
     
     {
@@ -99,7 +99,7 @@ Tags that can be used from the system internally.
       "context": "Media\\Service\\ImageContentProvider::231",
       "_links": {
         "self": {
-          "href": "http://dari-backend.dev/tag/147"
+          "href": "http://localhost:8080/tag/147"
         }
       }
     }

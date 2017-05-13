@@ -1,0 +1,41 @@
+# Composer files
+composer.phar
+!bin/composer.phar
+composer.lock
+vendor/
+# Local configs
+config/autoload/*.local.php
+config/autoload/local.php
+# Binary gettext files
+*.mo
+# Data
+data/payment
+data/token
+data/logs/
+data/sessions/
+data/tmp/
+temp/
+data/xml
+# Legacy ZF1
+demos/
+extras/documentation
+nbproject
+._*
+.~lock.*
+.buildpath
+.DS_Store
+.idea
+.project
+.settings
+public/vendor/
+data/logs/*
+data/report/*
+data/email_templates/*
+data/security-token/*
+!data/cache/.gitkeep
+data/logs/backend/application.log
+*.zpk
+tests/_output/*
+cassandra.logdir_IS_UNDEFINED
+cassandra.log
+*.iml

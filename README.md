@@ -18,7 +18,7 @@ Tags that can be used from the system internally.
 
 # Usage Rest 
 
-#GET : http://localhost:8080/tag 
+# GET : http://localhost:8080/tag 
 # 
     {
       "_links": {
@@ -55,7 +55,7 @@ Tags that can be used from the system internally.
       "page": 1
     }
 
-#GET : http://localhost:8080/tag/95
+# GET : http://localhost:8080/tag/95
 #
     {
       "id": 95,
@@ -68,7 +68,7 @@ Tags that can be used from the system internally.
       }
     }
 
-#POST: http://localhost:8080/tag
+# POST: http://localhost:8080/tag
 #
     {
     	"tag": "http://dari-backend.dev/content-article/31",
@@ -86,7 +86,7 @@ Tags that can be used from the system internally.
       }
     }
 
-#PATCH: http://localhost:8080/tag/147
+# PATCH: http://localhost:8080/tag/147
 #
     {
     	"tag": "http://dari-backend.dev/content-article/32",
@@ -104,6 +104,6 @@ Tags that can be used from the system internally.
       }
     }
 
-#DELETE: http://localhost:8080/tag/147
+# DELETE: http://localhost:8080/tag/147
     
     no content returned
